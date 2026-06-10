@@ -1,0 +1,8 @@
+# konfiguracja wyglądu aplikacji
+COLOR_BG = "#B0C4DE"
+COLOR_FRAME = "#A2B5CD"
+COLOR_TEXT = "#000000"
+COLOR_BTN = "#9FB6CD"
+
+DATABASE_FILE = "baza_danych.json"
+GOOGLE_MAPS_API_KEY_ENV = "GOOGLE_MAPS_API_KEY"
