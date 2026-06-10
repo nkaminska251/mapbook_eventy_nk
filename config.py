@@ -1,3 +1,4 @@
+# konfiguracja wyglądu aplikacji
 COLOR_BG = "#B0C4DE"
 COLOR_FRAME = "#A2B5CD"
 COLOR_TEXT = "#000000"
