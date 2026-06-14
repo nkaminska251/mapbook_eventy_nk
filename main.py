@@ -102,7 +102,6 @@ class EventManagerApp:
         self.notebook.bind("<<NotebookTabChanged>>", lambda e: self.refresh_all_map_markers())
 
     def refresh_all_map_markers(self) -> None:
-        """Usuwa stare markery i rysuje nowe, dopasowane formatem do wybranej zakładki."""
         for marker in self.map_markers:
             marker.delete()
         self.map_markers.clear()
@@ -152,9 +151,8 @@ class EventManagerApp:
             )
             self.map_markers.append(m)
 
-    # --- OKNO MODALNE DO EDYCJI ---
+    # --- OKNO DO EDYCJI ---
     def open_edit_dialog(self, title: str, fields: list[str], current_values: list[str], callback) -> None:
-        """Tworzy uniwersalne wyskakujące okienko do edycji danych."""
         dialog = tk.Toplevel(self.root)
         dialog.title(title)
         dialog.geometry("400x300")
